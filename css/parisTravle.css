@@ -1,0 +1,171 @@
+@charset "utf-8";
+.wrap{
+    width: 1000px;
+    height: 1800px;
+    margin: 50px auto 0;
+    position: relative;
+}
+.bg::before{
+    content: '';
+    position: absolute;
+    background: url(../img/bg.png) no-repeat center/cover;
+    width: 100%;
+    height: 500px;
+}
+/* .header */
+.header{
+    width: 775px;
+    height: 263px;
+    background-color: #08263483;
+    position: absolute;
+    top: 120px; left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.header img{
+    position: absolute;
+    top: 50px; left: 50%;
+    transform: translateX(-50%);
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 200px; left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/header_title_text_bg.png) no-repeat center;
+    width: 278px;
+    height: 25px;
+    opacity: 30%;
+}
+
+/* .con_area .con_title */
+.con_area{
+    width: 775px;
+    background-color: #fff;
+    position: absolute;
+    top: 383px; left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.con_title{
+    margin-top: 30px;
+}
+.con_title p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c593a;
+}
+.con_title figure{
+    position: relative;
+}
+.con_title figure h1{
+    position: absolute;
+    left: 50%; top: 18px;
+    transform: translateX(-50%);
+    color: #102f1a;
+}
+
+/* .con_area .con_info */
+.con_info{
+    margin: 50px auto 30px;
+    width: 675px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.con_info .text_area{
+    padding: 30px;
+}
+.text_area .text_title{
+    position: relative;
+   padding-bottom: 30px;
+}
+.text_area .text_title p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c593a;
+    margin-bottom: 15px;
+}
+.text_area .text_title h2{
+    color: #102f1a;
+}
+.text_area .text_title::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    background-color: #102f1a ;
+    left: 0; bottom: 0;
+    transform: translateX(50%);
+}
+.text_area ul{
+    margin-top: 50px;
+}
+.text_area ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.text_area ul li .text_box p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.text_area ul li:nth-child(1) .text_box{
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+}
+.text_area ul li:nth-child(1) .text_box p{
+    margin-top: 20px;
+}
+.text_area ul li:nth-child(2) .text_box{
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+
+}
+.text_area ul li:nth-child(2) .text_box p{
+    margin-top: 20px;
+}
+
+.text_area ul li:nth-child(1) .text_box::after{
+    content: '';
+    position: absolute;
+    background: url(../img/icon_paris_1.png) no-repeat center/cover;
+    width: 120px;
+    height: 120px;
+    left: 60px; top: -70px;
+}
+.text_area ul li:nth-child(2) .text_box::after{
+    content: '';
+    position: absolute;
+    background: url(../img/icon_paris_2.png) no-repeat center/cover;
+    width: 120px;
+    height: 120px;
+    right: 10px; top: -100px;
+}
+.btnArea{
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+.btnArea a{
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.btnArea a:nth-child(1){
+    background-color: #7c2b25e8;
+}
+.btnArea a:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.btnArea a:nth-child(2){
+    background-color: #424141e5;
+    margin-left: 0;
+}
